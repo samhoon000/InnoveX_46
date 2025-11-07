@@ -1,0 +1,94 @@
+[{
+  "_id": {
+    "$oid": "690d089158366dcfb62decf1"
+  },
+  "branch": "Computer Science and Engineering",
+  "sem": 3,
+  "subject": "Mathematics for CSE",
+  "modules": [
+    {
+      "moduleName": "Module 1 - Probability distributions",
+      "youtubeLinks": [
+        "https://youtu.be/ja5mpR4todk?si=BSpmIfSYNeUXfDBN"
+      ],
+      "pdfLinks": [
+        "file:///C:/Users/moham/Downloads/BCS301-module-1-pdf.pdf"
+      ],
+      "quizLink": "https://forms.gle/yourQuizFormLink",
+      "pyqLink": "https://drive.google.com/file/d/1PYQxyz/view?usp=sharing",
+      "gateFocusedQA": [
+        {
+          "question": 1
+        }
+      ]
+    },
+    {
+      "moduleName": "Module 2 - Joint probability distribution and Markov chain",
+      "youtubeLinks": [
+        "https://youtu.be/em7gjTec6no?si=SKEtgp7N9HSeTWZS"
+      ],
+      "pdfLinks": [
+        "file:///C:/Users/moham/Downloads/BCS301-module-2-pdf.pdf"
+      ],
+      "quizLink": "https://forms.gle/anotherQuizLink",
+      "pyqLink": "https://drive.google.com/file/d/1UvcxyJG5ehlgutFGDuYH3TytBHhL_RKG/view?usp=drive_link",
+      "gateFocusedQA": [
+        {
+          "question": 2
+        }
+      ]
+    },
+    {
+      "moduleName": "Module 3 - Statistical Inference 1",
+      "youtubeLinks": [
+        "https://youtu.be/LwCZtFxJSns?si=7WXnm_NJ18HPCTif"
+      ],
+      "pdfLinks": [
+        "file:///C:/Users/moham/Downloads/BCS301-module-3-pdf%20(1).pdf"
+      ],
+      "quizLink": "https://forms.gle/yourQuizFormLink",
+      "pyqLink": "https://drive.google.com/file/d/1PYQxyz/view?usp=sharing",
+      "gateFocusedQA": [
+        {
+          "question": "What is the difference between a hub and a switch?",
+          "answer": "A hub broadcasts data to all ports, while a switch sends data only to the intended recipient port."
+        },
+        {
+          "question": 3
+        }
+      ]
+    },
+    {
+      "moduleName": "Module 4 - Statistical Inference 2",
+      "youtubeLinks": [
+        "https://youtu.be/ibjYicDERtU?si=FmLqX-br5bqEZz94"
+      ],
+      "pdfLinks": [
+        "file:///C:/Users/moham/Downloads/BCS301-module-4-pdf.pdf"
+      ],
+      "quizLink": "https://forms.gle/yourQuizFormLink",
+      "pyqLink": "https://drive.google.com/file/d/1PYQxyz/view?usp=sharing",
+      "gateFocusedQA": [
+        {
+          "question": 4
+        }
+      ]
+    },
+    {
+      "moduleName": "Module 5 - Design of Experiments and ANOVA",
+      "youtubeLinks": [
+        "https://youtu.be/Wdf56gsJW10?si=isc9zSzp_dK95bFP"
+      ],
+      "pdfLinks": [
+        "file:///C:/Users/moham/Downloads/BCS301-module-5-pdf.pdf"
+      ],
+      "quizLink": "https://forms.gle/yourQuizFormLink",
+      "pyqLink": "https://drive.google.com/file/d/1PYQxyz/view?usp=sharing",
+      "gateFocusedQA": [
+        {
+          "Question": 5
+        }
+      ]
+    }
+  ]
+}]

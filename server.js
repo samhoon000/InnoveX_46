@@ -3,6 +3,9 @@ import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
 import moduleRoutes from "./routes/moduleRoutes.js";
+import subjectRoutes from "./routes/subject-routes.js";
+import subjectListRoutes from "./routes/subject-list-routes.js";
+import moduleRoutesNew from "./routes/module-routes.js";
 
 dotenv.config();
 const app = express();
@@ -23,7 +26,13 @@ mongoose.connect(process.env.MONGO_URI, {
 });
 
 
-app.use("/api/modules", moduleRoutes);
+// More specific routes first
+app.use("/api/subjects", subjectListRoutes); // GET /api/subjects/:branch/:semester
+app.use("/api/modules", moduleRoutesNew); // GET /api/modules/:subject
+
+// Less specific routes last
+app.use("/api/subjects", subjectRoutes); // GET /api/subjects?branch=...&sem=...&subject=...
+app.use("/api/modules", moduleRoutes); // GET /api/modules/:branch/:semester/:subject
 
 
 const PORT = process.env.PORT || 5000;
