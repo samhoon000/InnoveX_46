@@ -2,8 +2,8 @@ import { useNavigate } from 'react-router-dom'
 import { useApp } from '../context/AppContext.jsx'
 import '../styles.css'
 
-const branches = ['CSE', 'ECE', 'AIML/DS']
-const semesters = ['3', '4', '5']
+const branches = ['CSE', 'ECE', 'AIML/DS', 'CIVIL']
+const semesters = [ '3', '4', '5']
 
 export default function BranchSemester() {
   const navigate = useNavigate()

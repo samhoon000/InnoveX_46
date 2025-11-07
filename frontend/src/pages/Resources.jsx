@@ -3,21 +3,19 @@ import Navbar from '../components/Navbar.jsx'
 import '../styles.css'
 
 const sampleSubjects = [
-  { name: 'Data Structures', pdf: '#', yt: '#' },
-  { name: 'Discrete Mathematics', pdf: '#', yt: '#' },
-  { name: 'Computer Networks', pdf: '#', yt: '#' },
-  { name: 'Operating Systems', pdf: '#', yt: '#' },
-  { name: 'DBMS', pdf: '#', yt: '#' },
-  { name: 'Web Technologies', pdf: '#', yt: '#' },
+  { name: 'Mathematics for CSE', pdf: '#', yt: '#' },
+  { name: 'Digital dessign and computer organisation', pdf: '#', yt: '#' },
+  { name: 'Operating System', pdf: '#', yt: '#' },
+  { name: 'Data structures and applications', pdf: '#', yt: '#' },
+  { name: 'C++', pdf: '#', yt: '#' },
+  { name: 'OOPS with Java', pdf: '#', yt: '#' },
 ]
 
 const previousYearPapers = [
+  
   { year: '2023', semester: '3', paper: '#', solution: '#' },
-  { year: '2023', semester: '4', paper: '#', solution: '#' },
   { year: '2022', semester: '3', paper: '#', solution: '#' },
-  { year: '2022', semester: '4', paper: '#', solution: '#' },
   { year: '2021', semester: '3', paper: '#', solution: '#' },
-  { year: '2021', semester: '4', paper: '#', solution: '#' },
 ]
 
 export default function Resources() {
