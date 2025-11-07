@@ -49,6 +49,10 @@ export default function SelectionPage() {
                   <option value="CSE">CSE</option>
                   <option value="ECE">ECE</option>
                   <option value="AIML/DS">AIML/DS</option>
+                  <option value="CIVIL">CIVIL</option>
+                  <option value="MECH">MECH</option>
+
+
                 </select>
               </div>
               <div className="form-field">
@@ -59,9 +63,14 @@ export default function SelectionPage() {
                   onChange={(e) => setSemester(e.target.value)}
                 >
                   <option value="">Select Semester</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
                 </select>
               </div>
               <button

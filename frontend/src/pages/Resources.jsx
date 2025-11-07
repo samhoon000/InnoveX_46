@@ -28,13 +28,13 @@ export default function Resources() {
         <div className="resources-page-wrapper">
           <div className="resources-header-section">
             <h1 className="unified-heading" style={{ textAlign: 'center' }}>Your Learning Resources</h1>
-            <p className="resources-info">
+            <p className="resources-info"><b>
               {nickname ? `Hi ${nickname}! ` : ''}Scheme {scheme || '—'} · {branch || '—'} · Sem {semester || '—'}
-            </p>
+            </b></p>
           </div>
 
           <div className="resources-section">
-            <h2 className="resources-section-title">Subject Materials</h2>
+            <h2 className="resources-section-title">Subjects</h2>
             <div className="resources-grid">
               {sampleSubjects.map((s) => (
                 <div key={s.name} className="resource-card">
@@ -42,6 +42,7 @@ export default function Resources() {
                   <div className="resource-card-buttons">
                     <button className="resource-btn">PDF</button>
                     <button className="resource-btn">YouTube</button>
+                     <button className="resource-btn">PYQ</button>
                   </div>
                 </div>
               ))}
@@ -49,16 +50,17 @@ export default function Resources() {
           </div>
 
           <div className="resources-section">
-            <h2 className="resources-section-title">Previous Year Papers</h2>
+            <h2 className="resources-section-title">GATE Questions</h2>
             <div className="resources-grid">
               {previousYearPapers.map((paper, index) => (
                 <div key={index} className="resource-card">
-                  <h3 className="resource-card-title">Year {paper.year} - Sem {paper.semester}</h3>
+                  <h3 className="resource-card-title">Year {paper.year}</h3>
                   <div className="resource-card-buttons">
                     <button className="resource-btn">Question Paper</button>
                     <button className="resource-btn">Solution</button>
                   </div>
                 </div>
+
               ))}
             </div>
           </div>
