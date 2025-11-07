@@ -6,6 +6,7 @@ import moduleRoutes from "./routes/moduleRoutes.js";
 import subjectRoutes from "./routes/subject-routes.js";
 import subjectListRoutes from "./routes/subject-list-routes.js";
 import moduleRoutesNew from "./routes/module-routes.js";
+import quizRoutes from "./routes/quiz-routes.js";
 
 dotenv.config();
 const app = express();
@@ -29,6 +30,7 @@ mongoose.connect(process.env.MONGO_URI, {
 // More specific routes first
 app.use("/api/subjects", subjectListRoutes); // GET /api/subjects/:branch/:semester
 app.use("/api/modules", moduleRoutesNew); // GET /api/modules/:subject
+app.use("/api/quiz", quizRoutes); // GET /api/quiz/:subject
 
 // Less specific routes last
 app.use("/api/subjects", subjectRoutes); // GET /api/subjects?branch=...&sem=...&subject=...

@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useApp } from '../context/AppContext.jsx'
 import Navbar from '../components/Navbar.jsx'
 import '../styles.css'
 
 export default function Resources() {
+  const navigate = useNavigate()
   const { nickname, scheme, branch, semester } = useApp()
   const [subjects, setSubjects] = useState([])
   const [selectedSubject, setSelectedSubject] = useState(null)
@@ -12,6 +14,14 @@ export default function Resources() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(null)
   const [loadingModules, setLoadingModules] = useState(false)
+
+  // Handle quiz button click
+  const handleStartQuiz = (subject) => {
+    if (subject) {
+      const encodedSubject = encodeURIComponent(subject)
+      navigate(`/quiz/${encodedSubject}`)
+    }
+  }
 
   // Fetch subjects when branch and semester are available
   useEffect(() => {
@@ -180,6 +190,17 @@ export default function Resources() {
                 <p className="module-data-meta">
                   {moduleData.branch} · Semester {moduleData.sem}
                 </p>
+                {/* Quiz Button */}
+                {selectedSubject && (
+                  <div className="subject-quiz-button-container">
+                    <button
+                      onClick={() => handleStartQuiz(selectedSubject)}
+                      className="subject-quiz-button"
+                    >
+                      Take Quiz
+                    </button>
+                  </div>
+                )}
               </div>
 
               {moduleData.modules && moduleData.modules.length > 0 ? (
@@ -252,34 +273,6 @@ export default function Resources() {
                                 </a>
                               ))}
                             </div>
-                          </div>
-                        )}
-
-                        {/* Quiz Link */}
-                        {moduleData.modules[selectedModule].quizLink && (
-                          <div className="module-action-section">
-                            <a
-                              href={moduleData.modules[selectedModule].quizLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="module-action-btn quiz-btn"
-                            >
-                              Quiz
-                            </a>
-                          </div>
-                        )}
-
-                        {/* PYQ Link */}
-                        {moduleData.modules[selectedModule].pyqLink && (
-                          <div className="module-action-section">
-                            <a
-                              href={moduleData.modules[selectedModule].pyqLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="module-action-btn pyq-btn"
-                            >
-                              PYQ
-                            </a>
                           </div>
                         )}
                       </div>

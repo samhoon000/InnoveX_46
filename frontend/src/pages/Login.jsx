@@ -25,7 +25,7 @@ export default function Login() {
     <div className="split-page-container" style={{ paddingTop: '0' }}>
       <div className="split-page-left">
         <div className="split-card">
-          <h1 className="split-heading">Welcome to Learning Resources & Exam Planner</h1>
+          <h1 className="split-heading">Welcome to SmartPrep</h1>
           <p style={{ color: '#6b7280', marginBottom: '2rem', fontSize: '1rem', lineHeight: '1.6' }}>
             Sign in to continue to your personalized learning experience
           </p>

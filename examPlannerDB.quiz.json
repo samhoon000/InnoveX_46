@@ -1,0 +1,150 @@
+[{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d4d"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "What is the Laplace transform of sin(at)?",
+  "options": {
+    "a": "a / (s² + a²)",
+    "b": "s / (s² + a²)",
+    "c": "1 / (s - a)",
+    "d": "a / (s - a²)"
+  },
+  "answer": "a"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d4e"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "If f(x) = x², what is f’(x)?",
+  "options": {
+    "a": "x",
+    "b": "2x",
+    "c": "x²",
+    "d": "1"
+  },
+  "answer": "b"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d4f"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "What is the value of ∫₀¹ x² dx?",
+  "options": {
+    "a": "1/2",
+    "b": "1/3",
+    "c": "1/4",
+    "d": "2/3"
+  },
+  "answer": "b"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d50"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "What is the derivative of e^(2x)?",
+  "options": {
+    "a": "2e^(2x)",
+    "b": "e^(2x)",
+    "c": "x e^(2x)",
+    "d": "None"
+  },
+  "answer": "a"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d51"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "If A = [[1,2],[3,4]], what is det(A)?",
+  "options": {
+    "a": "-2",
+    "b": "-4",
+    "c": "-6",
+    "d": "-8"
+  },
+  "answer": "a"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d52"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "What is the inverse Laplace of 1/(s² + 4)?",
+  "options": {
+    "a": "sin(2t)",
+    "b": "cos(2t)",
+    "c": "e^(2t)",
+    "d": "2sin(t)"
+  },
+  "answer": "a"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d53"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "What is the radius of convergence of the series ∑ xⁿ / n?",
+  "options": {
+    "a": "1",
+    "b": "2",
+    "c": "∞",
+    "d": "0"
+  },
+  "answer": "a"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d54"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "If dy/dx = 3x², what is y?",
+  "options": {
+    "a": "x³",
+    "b": "x³ + C",
+    "c": "3x³",
+    "d": "3x³ + C"
+  },
+  "answer": "b"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d55"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "What is ∫ e^x dx?",
+  "options": {
+    "a": "e^x + C",
+    "b": "x e^x",
+    "c": "e^(x+1)",
+    "d": "1/e^x"
+  },
+  "answer": "a"
+},
+{
+  "_id": {
+    "$oid": "690d8cf6c1cea2f88cc35d56"
+  },
+  "subject": "Mathematics",
+  "semester": 3,
+  "question": "If y = ln(x), then dy/dx = ?",
+  "options": {
+    "a": "1/x",
+    "b": "x",
+    "c": "x²",
+    "d": "ln(x)"
+  },
+  "answer": "a"
+}]
